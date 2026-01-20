@@ -2,12 +2,12 @@
 
 ```mermaid
 flowchart LR
-    U[User Upload] --> V[Validation & Schema Checks<br/>(Python)]
-    V --> T[Cleaning & Transformation <br/>(Pandas)]
-    T --> S3R[(AWS S3<br/>Raw Data)]
-    T --> S3P[(AWS S3<br/>Processed Data)]
-    S3P --> G[AWS Glue<br/>Batch Jobs]
+    U[User Upload] --> V[Validation and Schema Checks (Python)]
+    V --> T[Cleaning and Transformation (Pandas)]
+    T --> S3R[(AWS S3 Raw Data)]
+    T --> S3P[(AWS S3 Processed Data)]
+    S3P --> G[AWS Glue Batch Jobs]
     G --> S3P
 ```
 
-This diagram shows the end-to-end flow from file upload through validation, transformation, and scalable batch processing, highlighting clear separation between ingestion, processing, and storage.
+This simplified diagram shows the end-to-end flow from file upload through validation, transformation, and scalable batch processing, optimized for GitHub README rendering.
